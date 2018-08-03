@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "db-final.json"
+  },
+  "fileDB": {
+    "name": "fileDB",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "/home/linuxadmin/witness/storage"
+  }
+}

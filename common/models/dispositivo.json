@@ -1,0 +1,71 @@
+{
+  "name": "Dispositivo",
+  "plural": "dispositivos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "default": ""
+    },
+    "descripcion": {
+      "type": "string",
+      "default": ""
+    },
+    "sistema_operativo": {
+      "type": "string",
+      "default": ""
+    },
+    "hardware": {
+      "type": "string",
+      "default": ""
+    },
+    "ip": {
+      "type": "string",
+      "default": ""
+    },
+    "proxy": {
+      "type": "string",
+      "default": ""
+    },
+    "puerto": {
+      "type": "string",
+      "default": ""
+    },
+    "location": {
+      "type": "string",
+      "default": ""
+    },
+    "huesped": {
+      "type": "string",
+      "default": ""
+    },
+    "online": {
+      "type": "boolean",
+      "default": false
+    },
+    "log": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "profile": {
+      "type": "belongsTo",
+      "model": "Profile",
+      "foreignKey": ""
+    },
+    "camaras": {
+      "type": "hasMany",
+      "model": "Camara",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

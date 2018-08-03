@@ -1,0 +1,65 @@
+{
+  "name": "profile",
+  "plural": "profiles",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "default": ""
+    },
+    "apellido": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "localidad": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "empresa": {
+      "type": "string",
+      "required": false,
+      "default": ""
+    },
+    "identificacion": {
+      "type": "string",
+      "default": ""
+    },
+    "fecha_alta": {
+      "type": "string",
+      "default": ""
+    },
+    "fecha_baja": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    },
+    "dispositivos": {
+      "type": "hasMany",
+      "model": "Dispositivo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

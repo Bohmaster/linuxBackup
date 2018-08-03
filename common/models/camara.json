@@ -1,0 +1,71 @@
+{
+  "name": "Camara",
+  "plural": "camaras",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "default": ""
+    },
+    "propietario": {
+      "type": "string",
+      "default": ""
+    },
+    "modelo": {
+      "type": "string",
+      "default": ""
+    },
+    "ip": {
+      "type": "string",
+      "default": ""
+    },
+    "puerto": {
+      "type": "string",
+      "default": ""
+    },
+    "protocolo": {
+      "type": "string",
+      "default": "\"rtsp\""
+    },
+    "url_transmision": {
+      "type": "string",
+      "default": ""
+    },
+    "formato_video": {
+      "type": "string",
+      "default": ""
+    },
+    "url_configuracion": {
+      "type": "string",
+      "default": ""
+    },
+    "fps": {
+      "type": "string",
+      "default": ""
+    },
+    "bit_rate": {
+      "type": "string",
+      "default": ""
+    },
+    "file_extension": {
+      "type": "string",
+      "default": ""
+    },
+    "mime_type": {
+      "type": "string",
+      "default": ""
+    },
+    "resolucion": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
